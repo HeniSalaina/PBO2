@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Kategori extends Model
+class Keranjang extends Model
 {
     use HasFactory;
 
@@ -15,7 +15,9 @@ class Kategori extends Model
      * @var array
      */
     protected $fillable = [
-        'nama_kategori',
-       
+        'id_keranjang',
+        'id_pengguna',
+        'id_barang',
+        'qty',
     ];
 }
